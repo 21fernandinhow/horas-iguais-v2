@@ -1,4 +1,6 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from "nuxt/config";
+import hours from "./app/data/hours.json";
+
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
@@ -19,4 +21,13 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/scripts",
   ],
+
+  nitro: {
+    preset: "static",
+    prerender: {
+      routes: Object.keys(hours).map(
+        (hour) => `/hora/${encodeURIComponent(hour)}`
+      ),
+    },
+  },
 });

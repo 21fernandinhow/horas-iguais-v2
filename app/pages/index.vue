@@ -1,5 +1,45 @@
 <script setup lang="ts">
-import HoursList from "~/components/HoursList.vue";
+import { useHead } from "#imports";
+
+const title =
+  "Significado das Horas Iguais — Descubra o que o universo quer te dizer";
+const description =
+  "Você viu 11:11 ou 22:22? Descubra o verdadeiro significado das horas iguais, sinais espirituais e mensagens dos anjos.";
+const pageUrl = "https://significadohorasiguais.com"; 
+const imageUrl = `${pageUrl}/logo.png`;
+
+useHead({
+  title,
+  meta: [
+    { name: "description", content: description },
+
+    { property: "og:title", content: title },
+    { property: "og:description", content: description },
+    { property: "og:url", content: pageUrl },
+    { property: "og:type", content: "website" },
+    { property: "og:image", content: imageUrl },
+    { property: "og:locale", content: "pt_BR" },
+
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: title },
+    { name: "twitter:description", content: description },
+    { name: "twitter:image", content: imageUrl },
+  ],
+  link: [{ rel: "canonical", href: pageUrl }],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: title,
+        description,
+        url: pageUrl,
+        inLanguage: "pt-BR",
+      }),
+    },
+  ],
+});
 </script>
 
 <template>
@@ -20,7 +60,7 @@ import HoursList from "~/components/HoursList.vue";
 
     <HoursList />
 
-    <hr class="mt-10 border-t border-gray-600"/>
+    <hr class="mt-10 border-t border-gray-600" />
 
     <div class="mt-10 text-sm leading-relaxed">
       <p class="mb-4 text-xl">🌟 <strong>Por que isso acontece?</strong></p>
