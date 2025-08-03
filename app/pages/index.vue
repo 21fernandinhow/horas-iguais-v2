@@ -6,7 +6,7 @@ const title =
 const description =
   "Você viu 11:11 ou 22:22? Descubra o verdadeiro significado das horas iguais, sinais espirituais e mensagens dos anjos.";
 const pageUrl = "https://significadohorasiguais.com"; 
-const imageUrl = `${pageUrl}/logo.png`;
+const imageUrl = `${pageUrl}/logo-og.png`;
 
 useHead({
   title,

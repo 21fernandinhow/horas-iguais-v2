@@ -24,7 +24,7 @@ const pageUrl = hourParam
   ? `${baseUrl}/hora/${encodeURIComponent(hourParam)}`
   : baseUrl;
 
-const ogImage = `${baseUrl}/logo.png`;
+const ogImage = `${baseUrl}/logo-og.png`;
 
 useHead({
   title,
