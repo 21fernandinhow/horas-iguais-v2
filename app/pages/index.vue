@@ -20,6 +20,8 @@ import HoursList from "~/components/HoursList.vue";
 
     <HoursList />
 
+    <hr class="mt-10 border-t border-gray-600"/>
+
     <div class="mt-10 text-sm leading-relaxed">
       <p class="mb-4 text-xl">🌟 <strong>Por que isso acontece?</strong></p>
       <ul class="list-disc list-inside space-y-1">

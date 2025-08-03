@@ -1,0 +1,14 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo minimalista místico">
+  <!-- Círculo externo -->
+  <circle cx="60" cy="60" r="55" stroke="#4B5563" stroke-width="3" fill="none" />
+  
+  <!-- Ponteiro 1 -->
+  <line x1="60" y1="60" x2="60" y2="25" stroke="#605dff" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Ponteiro 2 -->
+  <line x1="60" y1="60" x2="90" y2="90" stroke="#605dff" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Estrela central -->
+  <circle cx="60" cy="60" r="6" fill="#605dff" />
+  <path d="M60 54 L62.3 59 L68 60 L62.3 61 L60 66 L57.7 61 L52 60 L57.7 59 Z" fill="white" />
+</svg>

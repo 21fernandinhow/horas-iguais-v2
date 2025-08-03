@@ -13,7 +13,7 @@ const hoursData: HourData[] = Object.entries(hoursJson).map(([hour, description]
 </script>
 
 <template>
-  <div class="flex flex-wrap gap-3">
+  <div class="flex flex-wrap gap-3 justify-center">
     <NuxtLink
       v-for="item in hoursData"
       :to="`/hora/${item.hour}`"

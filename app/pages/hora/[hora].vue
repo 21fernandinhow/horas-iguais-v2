@@ -15,7 +15,7 @@ const hourDescription =
 </script>
 
 <template>
-  <div class="max-w-3xl mx-auto mt-10 px-4">
+  <div class="max-w-3xl mx-auto mt-8 px-4">
     <h2 class="text-3xl font-bold mb-6 text-center">
       {{
         hourParam
@@ -26,16 +26,16 @@ const hourDescription =
 
     <p
       v-if="hourDescription"
-      class="text-base mb-10"
+      class="text-base mb-8"
       style="text-align: justify"
     >
       {{ hourDescription }}
     </p>
-    <p v-else class="text-base text-red-600 mb-10 text-center">
+    <p v-else class="text-base text-red-600 mb-8 text-center">
       Não encontramos o significado para esta hora.
     </p>
 
-    <div class="flex justify-end">
+    <div>
       <NuxtLink to="/" class="btn btn-soft btn-primary"> Voltar </NuxtLink>
     </div>
   </div>
