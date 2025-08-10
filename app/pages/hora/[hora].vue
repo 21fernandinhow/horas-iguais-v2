@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
+import ShareButtons from "~/components/ShareButtons.vue";
 import hoursJsonRaw from "~/data/hours.json";
 
 interface HoursJsonType {
@@ -103,6 +104,10 @@ useHead({
     <p v-else class="text-base text-red-600 mb-8 text-center">
       Não encontramos o significado para esta hora.
     </p>
+
+    <ShareButtons v-if="hourParam" :hour="hourParam" />
+
+    <hr class="my-8 border-t-2 border-gray-600 rounded" />
 
     <div>
       <NuxtLink to="/" class="btn btn-soft btn-primary"> Voltar </NuxtLink>

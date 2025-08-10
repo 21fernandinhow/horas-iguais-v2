@@ -2,7 +2,7 @@
 import { useHead } from "#imports";
 
 const title =
-  "Significado das Horas Iguais — Descubra o que o universo quer te dizer";
+  "Significado das Horas Iguais: O que o universo quer te dizer";
 const description =
   "Você viu 11:11 ou 22:22? Descubra o verdadeiro significado das horas iguais, sinais espirituais e mensagens dos anjos.";
 const pageUrl = "https://significadohorasiguais.com"; 
